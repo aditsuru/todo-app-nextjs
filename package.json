@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@neondatabase/serverless": "^1.0.2",
+		"@t3-oss/env-nuxt": "^0.13.10",
 		"drizzle-orm": "^0.45.1",
 		"neverthrow": "^8.2.0",
 		"next": "16.1.6",
