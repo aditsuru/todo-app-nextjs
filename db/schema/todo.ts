@@ -13,9 +13,7 @@ export const todos = pgTable(
 			.defaultNow()
 			.$onUpdate(() => new Date()),
 	},
-	(table) => {
-		return { userIdx: index("user_idx").on(table.user) };
-	},
+	(table) => [{ userIdx: index("user_idx").on(table.user) }],
 );
 
 export type Todo = typeof todos.$inferSelect;
